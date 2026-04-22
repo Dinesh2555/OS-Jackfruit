@@ -6,35 +6,26 @@ Lightweight Container Runtime Simulator
 
 ## 📌 Overview
 This project simulates the basic working of a container runtime.  
-It demonstrates how different workloads (CPU, memory, and I/O) can be executed and monitored, similar to how containers behave in real systems.
+It demonstrates how different workloads (CPU, memory, and I/O) can be executed and monitored.
 
 ---
 
 ## ⚙️ Features
-- Execution of different workloads
-- CPU-intensive process simulation
-- Memory allocation simulation
-- File I/O activity simulation
-- Simple monitoring system
-- Logging of outputs
+- CPU workload simulation  
+- Memory workload simulation  
+- I/O workload simulation  
+- Logging and monitoring  
+- Simple container-like execution  
 
 ---
 
 ## 📂 Project Structure
 
 OS-Jackfruit/
-├── src/            # Source code files  
-│   ├── engine.c  
-│   ├── monitor.c  
-│   ├── cpu_hog.c  
-│   ├── memory_hog.c  
-│   ├── io_pulse.c  
-│  
-├── include/        # Header files  
-│   └── monitor_ioctl.h  
-│  
-├── screenshots/    # Output screenshots  
-├── logs/           # Log files  
+├── src/  
+├── include/  
+├── screenshots/  
+├── logs/  
 ├── Makefile  
 └── README.md  
 
@@ -45,36 +36,41 @@ OS-Jackfruit/
 ### Compile
 make
 
-### Run CPU workload
-./engine cpu
-
-### Run Memory workload
-./engine memory
-
-### Run I/O workload
-./engine io
+### Run workloads
+./engine cpu  
+./engine memory  
+./engine io  
 
 ---
 
 ## 📸 Output Screenshots
 
-### CPU Execution
-![CPU](screenshots/cpu_run.jpeg)
+### Supervisor Start
+![Supervisor](screenshots/supervisor_start.jpeg)
 
-### I/O Execution
-![IO](screenshots/io_run.jpeg)
+### Container Logs (Alpha)
+![Alpha](screenshots/container_logs_alpha.jpeg)
 
-### Logs Output
-![Logs](screenshots/log_output.jpeg)
+### Container Logs (CPU Low)
+![CPU Low](screenshots/container_logs_cpu_low.jpeg)
+
+### Kernel Monitor Output
+![dmesg](screenshots/dmesg_monitor.jpeg)
+
+### Process Status
+![Process](screenshots/process_status.jpeg)
+
+### Log Test Output
+![Logtest](screenshots/logtest_output.jpeg)
 
 ---
 
 ## 🎯 Conclusion
-This project provides a basic simulation of container runtime behavior by managing and executing different types of workloads. It helps understand process execution, resource usage, and monitoring in a simplified way.
+This project demonstrates a basic simulation of container runtime behavior using different workloads and monitoring techniques.
 
 ---
 
 ## 📚 Technologies Used
 - C Programming  
-- Linux Environment  
-- GCC Compiler  
+- Linux  
+- GCC  
