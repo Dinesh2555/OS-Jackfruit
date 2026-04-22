@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdint.h>
+#include <time.h>
+
+int main() {
+    unsigned long long accumulator = 0;
+    int elapsed = 0;
+
+    while (1) {
+        for (unsigned long long i = 0; i < 100000000; i++) {
+            accumulator += i;
+        }
+
+        elapsed++;
+        printf("cpu_hog alive elapsed=%d accumulator=%llu\n", elapsed, accumulator);
+
+        struct timespec ts = {0, 500000000};
+        nanosleep(&ts, NULL);
+    }
+
+    return 0;
+}
