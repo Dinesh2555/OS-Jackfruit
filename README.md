@@ -4,13 +4,13 @@ Lightweight Container Runtime Simulator
 
 ---
 
-## 📌 Overview
+##  Overview
 This project simulates the basic working of a container runtime.  
 It demonstrates how different workloads (CPU, memory, and I/O) can be executed and monitored.
 
 ---
 
-## ⚙️ Features
+##  Features
 - CPU workload simulation  
 - Memory workload simulation  
 - I/O workload simulation  
@@ -19,7 +19,7 @@ It demonstrates how different workloads (CPU, memory, and I/O) can be executed a
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 OS-Jackfruit/
 ├── src/  
@@ -31,7 +31,7 @@ OS-Jackfruit/
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### Compile
 make
@@ -43,7 +43,7 @@ make
 
 ---
 
-## 📸 Output Screenshots
+##  Output Screenshots
 
 ### Supervisor Start
 ![Supervisor](screenshots/supervisor_start.jpeg)
@@ -65,12 +65,12 @@ make
 
 ---
 
-## 🎯 Conclusion
+##  Conclusion
 This project demonstrates a basic simulation of container runtime behavior using different workloads and monitoring techniques.
 
 ---
 
-## 📚 Technologies Used
+##  Technologies Used
 - C Programming  
 - Linux  
 - GCC  
